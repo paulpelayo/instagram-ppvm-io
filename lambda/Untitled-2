@@ -1,0 +1,23 @@
+Call
+https://www.instagram.com/swaggyp1/?__a=1
+
+Get links for individual photo (once you have the shortcode)
+https://www.instagram.com/p/B4gjA02Aob_/?__a=1
+
+
+'{{"id":"swaggyp1","first":50,"after":"''"}}'
+https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={"id":"swaggyp1","first":50,"after":""}
+https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables=%7B%7B%22id%22%3A%22swaggyp1%22%2C%22first%22%3A50%2C%22after%22%3A%22%27%27%22%7D%7D
+
+https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={%22id%22:%22354036630%22,%22first%22:50,%22after%22:%22%22}
+https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={%22id%22:%22swaggyp1%22,%22first%22:50,%22after%22:%22%22}
+
+
+User name 
+pp_pics
+
+Make call to find ID Number
+curl https://www.instagram.com/pp_pics/\?__a\=1 | jq .graphql.user.id
+
+Get first 50 photos
+https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables=%7B%22id%22:%22${USER_ID}%22,%22first%22:50,%22after%22:%22%22%7D
